@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>booking</title>
+</head>
+<body>
+<form action="host.php" method="post" >
+    <fieldset>
+        <legend>
+            Заявка
+        </legend>
+        <div>
+            <lebel>
+                Ім'я
+            </lebel>
+            <input type="text" name="Firstname" autofocus spellcheck="true">
+        </div>
+        <div>
+            <lebel>
+                Прізвище
+            </lebel>
+            <input type="text" name="Secondname">
+        </div>
+        <div>
+            <lebel>
+                Номер телефону +
+            </lebel>
+            <input type="tel" name="telnumber" placeholder="380451111111" pattern="^[ 0-9]+$" required>
+        </div>
+        <div>
+            <lebel>
+                Пошта
+            </lebel>
+            <input type="email" name="mail" placeholder="user@example.com">
+        </div>
+        <div>
+            <lebel>
+                Дата заселення
+            </lebel>
+            <input type="date" name="firstdate">
+        </div>
+        <div>
+            <lebel>
+                Дата выселення
+            </lebel>
+            <input type="seconddate">
+        </div>
+        <div>
+            <label>
+                <input name="guest" type="checkbox">
+                Я головний гість
+            </label>
+        </div>
+        <button>Відправити</button>
+    </fieldset>
+</form>
+
+</body>
+</html>
